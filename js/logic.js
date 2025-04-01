@@ -86,6 +86,7 @@ function flipCoin(x) {
     }
 
 
+
     result.innerText = face;
     choice.innerText = pick;
 
