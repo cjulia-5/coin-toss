@@ -53,5 +53,10 @@ function flipCoin(x) {
         displayLost.innerText = gamesLost;
     }
 
+    function flipCoin(pick) {
+        let choice = document.getElementById('choice');
+        choice.innerText = pick;
+    }
+
     console.log(randNum);
 }
