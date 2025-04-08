@@ -48,15 +48,15 @@ function flipCoin(x) {
         gamesWon = 0;
         gamesLost = 0;
 
+       let gameCount = document.getElementById('count');
+       let winCount = document.getElementById('wins');
+       let lossCount = document.getElementById('losses');
+
         displayPlayed.innerText = gamesPlayed;
         displayWon.innerText = gamesWon;
         displayLost.innerText = gamesLost;
     }
 
-    function flipCoin(pick) {
-        let choice = document.getElementById('choice');
-        choice.innerText = pick;
-    }
 
     console.log(randNum);
 }
