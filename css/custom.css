@@ -1,33 +1,39 @@
-img {
-    width: 180px;
-    height: auto;
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+	font-family: system-ui,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
+    font-size: 1.5rem;
 }
 main {
-    font-size: 125%;
+    width: 75vw;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    flex-basis: 90vw;
+    justify-content: center;
     align-items: center;
-    padding: 2rem;
+}
+.inputs {
+    display: flex;
+    gap: 1em;
+}
+button {
+    min-width: 8rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 1em;
+}
+span {
+    font-size: 150%;
+    font-weight: bold;
 }
 .flex {
     display: flex;
     gap: 2rem;
 }
-section { 
-    margin-top: 2rem;
-    width: 100%;
-    text-align: center;   
-}
-section span {
-    min-width: 50px;
-    text-decoration: underline;
-}
-hr {
-    height: 2px;
-    color: black;
-    width: 100%;
-}
-button {
-    cursor: pointer;
+.current, .history {
+    border: 2px solid #ccc;
+    padding: 1rem 2rem;
+    width: 400px;
 }
