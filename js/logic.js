@@ -42,21 +42,16 @@ function flipCoin(x) {
     displayPlayed.innerText = gamesPlayed;
     displayWon.innerText = gamesWon;
     displayLost.innerText = gamesLost;
-
-    function resetScore() {
-        gamesPlayed = 0;
-        gamesWon = 0;
-        gamesLost = 0;
-
-       let gameCount = document.getElementById('count');
-       let winCount = document.getElementById('wins');
-       let lossCount = document.getElementById('losses');
-
-        displayPlayed.innerText = gamesPlayed;
-        displayWon.innerText = gamesWon;
-        displayLost.innerText = gamesLost;
-    }
-
-
-    console.log(randNum);
 }
+
+function resetScore() {
+    gamesPlayed = 0;
+    gamesWon = 0;
+    gamesLost = 0;
+
+
+    displayPlayed.innerText = gamesPlayed;
+    displayWon.innerText = gamesWon;
+    displayLost.innerText = gamesLost;
+}
+
